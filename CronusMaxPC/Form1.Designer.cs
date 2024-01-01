@@ -38,6 +38,8 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.EnablePresets = new System.Windows.Forms.CheckBox();
             this.bruh = new System.Windows.Forms.TabPage();
+            this.ActionBind = new System.Windows.Forms.ComboBox();
+            this.Action2 = new System.Windows.Forms.ComboBox();
             this.EnableSequence = new System.Windows.Forms.CheckBox();
             this.Delay1 = new System.Windows.Forms.TextBox();
             this.Action1 = new System.Windows.Forms.ComboBox();
@@ -77,8 +79,18 @@
             this.SetMaxFPSMW2 = new System.Windows.Forms.Button();
             this.MW2MaxFPSVal = new System.Windows.Forms.TextBox();
             this.ManageCustomInputs = new System.Windows.Forms.Timer(this.components);
-            this.Action2 = new System.Windows.Forms.ComboBox();
-            this.ActionBind = new System.Windows.Forms.ComboBox();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.SendMW3 = new System.Windows.Forms.Button();
+            this.MW3MaxFPSVal = new System.Windows.Forms.TextBox();
+            this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.SendBO2 = new System.Windows.Forms.Button();
+            this.SetBO2 = new System.Windows.Forms.TextBox();
+            this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.SendBO1 = new System.Windows.Forms.Button();
+            this.SetBO1 = new System.Windows.Forms.TextBox();
+            this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.SendWW2 = new System.Windows.Forms.Button();
+            this.SetWW2 = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -100,6 +112,10 @@
             this.groupBox3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox17.SuspendLayout();
+            this.groupBox18.SuspendLayout();
+            this.groupBox19.SuspendLayout();
+            this.groupBox20.SuspendLayout();
             this.SuspendLayout();
             // 
             // ManageInputs
@@ -264,6 +280,119 @@
             this.bruh.Size = new System.Drawing.Size(802, 429);
             this.bruh.TabIndex = 1;
             this.bruh.Text = "Sequence";
+            // 
+            // ActionBind
+            // 
+            this.ActionBind.FormattingEnabled = true;
+            this.ActionBind.Items.AddRange(new object[] {
+            "***MOUSE BUTTONS***",
+            "VK_LBUTTON",
+            "VK_RBUTTON",
+            "VK_MBUTTON",
+            "VK_XBUTTON1",
+            "VK_XBUTTON2",
+            "***FUNCTION KEYS***",
+            "VK_F1",
+            "VK_F2",
+            "VK_F3",
+            "VK_F4",
+            "VK_F5",
+            "VK_F6",
+            "VK_F7",
+            "VK_F8",
+            "VK_F9",
+            "VK_F10",
+            "VK_F11",
+            "VK_F12",
+            "***ALPHABETIC KEYS***",
+            "VK_A",
+            "VK_B",
+            "VK_C",
+            "VK_D",
+            "VK_E",
+            "VK_F",
+            "VK_G",
+            "VK_H",
+            "VK_I",
+            "VK_J",
+            "VK_K",
+            "VK_L",
+            "VK_M",
+            "VK_N",
+            "VK_O",
+            "VK_P",
+            "VK_Q",
+            "VK_R",
+            "VK_S",
+            "VK_T",
+            "VK_U",
+            "VK_V",
+            "VK_W",
+            "VK_X",
+            "VK_Y",
+            "VK_Z",
+            "***MODIFIER KEYS***",
+            "VK_LEFT",
+            "VK_UP",
+            "VK_RIGHT",
+            "VK_DOWN",
+            "VK_HOME",
+            "VK_END",
+            "VK_PRIOR",
+            "VK_NEXT",
+            "VK_INSERT",
+            "VK_DELETE",
+            "***SPECIAL KEYS***",
+            "VK_ESCAPE",
+            "VK_SPACE",
+            "VK_RETURN",
+            "VK_TAB",
+            "VK_BACK",
+            "***NUMERIC KEYPAD***",
+            "VK_NUMLOCK",
+            "VK_DIVIDE",
+            "VK_MULTIPLY",
+            "VK_SUBTRACT",
+            "VK_ADD",
+            "VK_DECIMAL",
+            "VK_NUMPAD_ENTER",
+            "***MEDIA KEYS***",
+            "VK_VOLUME_MUTE",
+            "VK_VOLUME_DOWN",
+            "VK_VOLUME_UP",
+            "VK_MEDIA_NEXT_TRACK",
+            "VK_MEDIA_PREV_TRACK",
+            "VK_MEDIA_STOP",
+            "VK_MEDIA_PLAY_PAUSE"});
+            this.ActionBind.Location = new System.Drawing.Point(691, 382);
+            this.ActionBind.Name = "ActionBind";
+            this.ActionBind.Size = new System.Drawing.Size(105, 21);
+            this.ActionBind.TabIndex = 7;
+            this.ActionBind.Text = "Select Bind";
+            // 
+            // Action2
+            // 
+            this.Action2.FormattingEnabled = true;
+            this.Action2.Items.AddRange(new object[] {
+            "Reload",
+            "SwapWeapon",
+            "Crouch",
+            "Jump",
+            "Lethal",
+            "Tactical",
+            "Forward",
+            "Backward",
+            "Left",
+            "Right",
+            "Sprint",
+            "Melee",
+            "Shoot",
+            "Aim"});
+            this.Action2.Location = new System.Drawing.Point(6, 59);
+            this.Action2.Name = "Action2";
+            this.Action2.Size = new System.Drawing.Size(104, 21);
+            this.Action2.TabIndex = 6;
+            this.Action2.Text = "Select Action";
             // 
             // EnableSequence
             // 
@@ -1755,6 +1884,10 @@
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.DimGray;
+            this.tabPage4.Controls.Add(this.groupBox20);
+            this.tabPage4.Controls.Add(this.groupBox19);
+            this.tabPage4.Controls.Add(this.groupBox18);
+            this.tabPage4.Controls.Add(this.groupBox17);
             this.tabPage4.Controls.Add(this.groupBox1);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
@@ -1796,118 +1929,117 @@
             this.ManageCustomInputs.Interval = 1;
             this.ManageCustomInputs.Tick += new System.EventHandler(this.ManageCustomInputs_Tick);
             // 
-            // Action2
+            // groupBox17
             // 
-            this.Action2.FormattingEnabled = true;
-            this.Action2.Items.AddRange(new object[] {
-            "Reload",
-            "SwapWeapon",
-            "Crouch",
-            "Jump",
-            "Lethal",
-            "Tactical",
-            "Forward",
-            "Backward",
-            "Left",
-            "Right",
-            "Sprint",
-            "Melee",
-            "Shoot",
-            "Aim"});
-            this.Action2.Location = new System.Drawing.Point(6, 59);
-            this.Action2.Name = "Action2";
-            this.Action2.Size = new System.Drawing.Size(104, 21);
-            this.Action2.TabIndex = 6;
-            this.Action2.Text = "Select Action";
+            this.groupBox17.Controls.Add(this.SendMW3);
+            this.groupBox17.Controls.Add(this.MW3MaxFPSVal);
+            this.groupBox17.Location = new System.Drawing.Point(103, 6);
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.Size = new System.Drawing.Size(91, 76);
+            this.groupBox17.TabIndex = 2;
+            this.groupBox17.TabStop = false;
+            this.groupBox17.Text = "MW3";
             // 
-            // ActionBind
+            // SendMW3
             // 
-            this.ActionBind.FormattingEnabled = true;
-            this.ActionBind.Items.AddRange(new object[] {
-            "***MOUSE BUTTONS***",
-            "VK_LBUTTON",
-            "VK_RBUTTON",
-            "VK_MBUTTON",
-            "VK_XBUTTON1",
-            "VK_XBUTTON2",
-            "***FUNCTION KEYS***",
-            "VK_F1",
-            "VK_F2",
-            "VK_F3",
-            "VK_F4",
-            "VK_F5",
-            "VK_F6",
-            "VK_F7",
-            "VK_F8",
-            "VK_F9",
-            "VK_F10",
-            "VK_F11",
-            "VK_F12",
-            "***ALPHABETIC KEYS***",
-            "VK_A",
-            "VK_B",
-            "VK_C",
-            "VK_D",
-            "VK_E",
-            "VK_F",
-            "VK_G",
-            "VK_H",
-            "VK_I",
-            "VK_J",
-            "VK_K",
-            "VK_L",
-            "VK_M",
-            "VK_N",
-            "VK_O",
-            "VK_P",
-            "VK_Q",
-            "VK_R",
-            "VK_S",
-            "VK_T",
-            "VK_U",
-            "VK_V",
-            "VK_W",
-            "VK_X",
-            "VK_Y",
-            "VK_Z",
-            "***MODIFIER KEYS***",
-            "VK_LEFT",
-            "VK_UP",
-            "VK_RIGHT",
-            "VK_DOWN",
-            "VK_HOME",
-            "VK_END",
-            "VK_PRIOR",
-            "VK_NEXT",
-            "VK_INSERT",
-            "VK_DELETE",
-            "***SPECIAL KEYS***",
-            "VK_ESCAPE",
-            "VK_SPACE",
-            "VK_RETURN",
-            "VK_TAB",
-            "VK_BACK",
-            "***NUMERIC KEYPAD***",
-            "VK_NUMLOCK",
-            "VK_DIVIDE",
-            "VK_MULTIPLY",
-            "VK_SUBTRACT",
-            "VK_ADD",
-            "VK_DECIMAL",
-            "VK_NUMPAD_ENTER",
-            "***MEDIA KEYS***",
-            "VK_VOLUME_MUTE",
-            "VK_VOLUME_DOWN",
-            "VK_VOLUME_UP",
-            "VK_MEDIA_NEXT_TRACK",
-            "VK_MEDIA_PREV_TRACK",
-            "VK_MEDIA_STOP",
-            "VK_MEDIA_PLAY_PAUSE"});
-            this.ActionBind.Location = new System.Drawing.Point(691, 382);
-            this.ActionBind.Name = "ActionBind";
-            this.ActionBind.Size = new System.Drawing.Size(105, 21);
-            this.ActionBind.TabIndex = 7;
-            this.ActionBind.Text = "Select Bind";
+            this.SendMW3.Location = new System.Drawing.Point(7, 45);
+            this.SendMW3.Name = "SendMW3";
+            this.SendMW3.Size = new System.Drawing.Size(75, 25);
+            this.SendMW3.TabIndex = 1;
+            this.SendMW3.Text = "Set FPS";
+            this.SendMW3.UseVisualStyleBackColor = true;
+            this.SendMW3.Click += new System.EventHandler(this.SendMW3_Click);
+            // 
+            // MW3MaxFPSVal
+            // 
+            this.MW3MaxFPSVal.Location = new System.Drawing.Point(7, 19);
+            this.MW3MaxFPSVal.Name = "MW3MaxFPSVal";
+            this.MW3MaxFPSVal.Size = new System.Drawing.Size(75, 20);
+            this.MW3MaxFPSVal.TabIndex = 1;
+            // 
+            // groupBox18
+            // 
+            this.groupBox18.Controls.Add(this.SendBO2);
+            this.groupBox18.Controls.Add(this.SetBO2);
+            this.groupBox18.Location = new System.Drawing.Point(103, 88);
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.Size = new System.Drawing.Size(91, 76);
+            this.groupBox18.TabIndex = 3;
+            this.groupBox18.TabStop = false;
+            this.groupBox18.Text = "BO2";
+            // 
+            // SendBO2
+            // 
+            this.SendBO2.Location = new System.Drawing.Point(7, 45);
+            this.SendBO2.Name = "SendBO2";
+            this.SendBO2.Size = new System.Drawing.Size(75, 25);
+            this.SendBO2.TabIndex = 1;
+            this.SendBO2.Text = "Set FPS";
+            this.SendBO2.UseVisualStyleBackColor = true;
+            this.SendBO2.Click += new System.EventHandler(this.SendBO2_Click);
+            // 
+            // SetBO2
+            // 
+            this.SetBO2.Location = new System.Drawing.Point(7, 19);
+            this.SetBO2.Name = "SetBO2";
+            this.SetBO2.Size = new System.Drawing.Size(75, 20);
+            this.SetBO2.TabIndex = 1;
+            // 
+            // groupBox19
+            // 
+            this.groupBox19.Controls.Add(this.SendBO1);
+            this.groupBox19.Controls.Add(this.SetBO1);
+            this.groupBox19.Location = new System.Drawing.Point(6, 88);
+            this.groupBox19.Name = "groupBox19";
+            this.groupBox19.Size = new System.Drawing.Size(91, 76);
+            this.groupBox19.TabIndex = 4;
+            this.groupBox19.TabStop = false;
+            this.groupBox19.Text = "BO1";
+            // 
+            // SendBO1
+            // 
+            this.SendBO1.Location = new System.Drawing.Point(7, 45);
+            this.SendBO1.Name = "SendBO1";
+            this.SendBO1.Size = new System.Drawing.Size(75, 25);
+            this.SendBO1.TabIndex = 1;
+            this.SendBO1.Text = "Set FPS";
+            this.SendBO1.UseVisualStyleBackColor = true;
+            this.SendBO1.Click += new System.EventHandler(this.SendBO1_Click);
+            // 
+            // SetBO1
+            // 
+            this.SetBO1.Location = new System.Drawing.Point(7, 19);
+            this.SetBO1.Name = "SetBO1";
+            this.SetBO1.Size = new System.Drawing.Size(75, 20);
+            this.SetBO1.TabIndex = 1;
+            // 
+            // groupBox20
+            // 
+            this.groupBox20.Controls.Add(this.SendWW2);
+            this.groupBox20.Controls.Add(this.SetWW2);
+            this.groupBox20.Location = new System.Drawing.Point(200, 6);
+            this.groupBox20.Name = "groupBox20";
+            this.groupBox20.Size = new System.Drawing.Size(91, 76);
+            this.groupBox20.TabIndex = 5;
+            this.groupBox20.TabStop = false;
+            this.groupBox20.Text = "WW2";
+            // 
+            // SendWW2
+            // 
+            this.SendWW2.Location = new System.Drawing.Point(7, 45);
+            this.SendWW2.Name = "SendWW2";
+            this.SendWW2.Size = new System.Drawing.Size(75, 25);
+            this.SendWW2.TabIndex = 1;
+            this.SendWW2.Text = "Set FPS";
+            this.SendWW2.UseVisualStyleBackColor = true;
+            this.SendWW2.Click += new System.EventHandler(this.SendWW2_Click);
+            // 
+            // SetWW2
+            // 
+            this.SetWW2.Location = new System.Drawing.Point(7, 19);
+            this.SetWW2.Name = "SetWW2";
+            this.SetWW2.Size = new System.Drawing.Size(75, 20);
+            this.SetWW2.TabIndex = 1;
             // 
             // Form1
             // 
@@ -1945,6 +2077,14 @@
             this.tabPage4.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox17.ResumeLayout(false);
+            this.groupBox17.PerformLayout();
+            this.groupBox18.ResumeLayout(false);
+            this.groupBox18.PerformLayout();
+            this.groupBox19.ResumeLayout(false);
+            this.groupBox19.PerformLayout();
+            this.groupBox20.ResumeLayout(false);
+            this.groupBox20.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1999,6 +2139,18 @@
         private System.Windows.Forms.Timer ManageCustomInputs;
         private System.Windows.Forms.ComboBox Action2;
         private System.Windows.Forms.ComboBox ActionBind;
+        private System.Windows.Forms.GroupBox groupBox17;
+        private System.Windows.Forms.Button SendMW3;
+        private System.Windows.Forms.TextBox MW3MaxFPSVal;
+        private System.Windows.Forms.GroupBox groupBox18;
+        private System.Windows.Forms.Button SendBO2;
+        private System.Windows.Forms.TextBox SetBO2;
+        private System.Windows.Forms.GroupBox groupBox19;
+        private System.Windows.Forms.Button SendBO1;
+        private System.Windows.Forms.TextBox SetBO1;
+        private System.Windows.Forms.GroupBox groupBox20;
+        private System.Windows.Forms.Button SendWW2;
+        private System.Windows.Forms.TextBox SetWW2;
     }
 }
 

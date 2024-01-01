@@ -141,5 +141,36 @@ namespace CronusMaxPC
 
             ManageSqnceBinds();
         }
+
+        private void SendMW3_Click(object sender, EventArgs e)
+        {
+            m.OpenProcess("iw5mp.exe");
+            Thread.Sleep(5);
+            m.WriteMemory("iw5mp.exe+55D1F88", "int",MW3MaxFPSVal.Text);
+            m.WriteMemory("iw5mp.exe+55D1F98", "int", MW3MaxFPSVal.Text);
+        }
+
+        private void SendBO2_Click(object sender, EventArgs e)
+        {
+            m.OpenProcess("t6mp.exe");
+            Thread.Sleep(5);
+            m.WriteMemory("t6mp.exe+2633760", "int", SetBO2.Text);
+            m.WriteMemory("t6mp.exe+2633770", "int", SetBO2.Text);
+        }
+
+        private void SendBO1_Click(object sender, EventArgs e)
+        {
+            m.OpenProcess("BlackOpsMP.exe");
+            Thread.Sleep(5);
+            m.WriteMemory("BlackOpsMP.exe+347DAE8", "int", SetBO1.Text);
+            m.WriteMemory("BlackOpsMP.exe+347DAF8", "int", SetBO1.Text);
+        }
+
+        private void SendWW2_Click(object sender, EventArgs e)
+        {
+            m.OpenProcess("s2_mp64_ship.exe");
+            Thread.Sleep(5);
+            m.WriteMemory("s2_mp64_ship.exe+281EAB0", "int", SetWW2.Text);
+        }
     }
 }
